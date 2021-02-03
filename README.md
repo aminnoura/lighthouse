@@ -29,3 +29,7 @@ Install GraphQL DevTools
 ### `php artisan serve`
 
 Run the server
+
+### `php artisan migrate`
+
+Create database user table 
