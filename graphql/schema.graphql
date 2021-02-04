@@ -7,6 +7,7 @@ scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\Date
 type Query {
     users: [User!]! @paginate(defaultCount: 10)
     user(id: ID @eq): User @find
+    me: User @auth
 }
 
 type User {
@@ -15,4 +16,13 @@ type User {
     email: String!
     created_at: DateTime!
     updated_at: DateTime!
+}
+
+type Mutation {
+    login(email: String!, password: String!): User!
+    register(
+        email: String! @rules(apply: ["required", "email", "unique:users"])
+        password: String! @rules(apply: ["required", "min:8"]) @hash
+        name: String! @rules(apply: ["required", "min:2"])
+    ): User @create @event(dispatch: "Illuminate\\Auth\\Events\\Registered")
 }
