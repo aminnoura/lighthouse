@@ -1,0 +1,58 @@
+{
+  "name": "lighthouse-frontend",
+  "private": false,
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/axios-mock-adapter": "^1.10.0",
+    "@types/classnames": "^2.2.3",
+    "@types/enzyme": "^3.1.10",
+    "@types/enzyme-adapter-react-16": "^1.0.2",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.12.55",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^4.2.6",
+    "axios": "^0.18.0",
+    "axios-mock-adapter": "^1.15.0",
+    "classnames": "^2.2.5",
+    "cross-env": "^5.1.5",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest-enzyme": "^6.0.0",
+    "jest-junit": "^11.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom --testResultsProcessor='jest-junit' --verbose",
+    "test:watch": "react-scripts test --env=jsdom --verbose"
+  },
+  "jest-junit": {
+    "outputName": "./test-results.xml",
+    "suiteName": "jest tests",
+    "suiteNameTemplate": "{filepath}",
+    "classNameTemplate": "{classname}",
+    "titleTemplate": "{title}",
+    "ancestorSeparator": " › "
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
