@@ -12,7 +12,8 @@ import {
 import App from "./App";
 
 export const link = createHttpLink({
-    uri: "http://localhost:8000/graphql"
+    uri: "http://localhost:8000/graphql",
+    credentials: 'same-origin'
 });
 
 const authLink = setContext((_, { headers }) => {
@@ -22,7 +23,7 @@ const authLink = setContext((_, { headers }) => {
     return {
       headers: {
         ...headers,
-        authorization: token ? `Bearer ${token}` : "",
+        authorization: token ? `${token}` : "",
       }
     }
 });
