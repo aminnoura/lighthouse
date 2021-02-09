@@ -26,8 +26,9 @@ class Login
          * @var \App\Models\User $user
          */
         $user = $guard->user();
+        $user->remember_token = csrf_token();
+        $user->save();
 
         return $user;
     }
 }
- 

@@ -17,6 +17,7 @@ type User {
     email: String!
     created_at: DateTime!
     updated_at: DateTime!
+    remember_token: String!
 }
 
 # type Mutation {
