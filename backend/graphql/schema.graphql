@@ -8,7 +8,6 @@ type Query {
     users: [User!]! @paginate(defaultCount: 10) @guard
     user(id: ID @eq): User @find
     me: User @auth
-    my: User @auth
 }
 
 type User {
@@ -17,7 +16,8 @@ type User {
     email: String!
     created_at: DateTime!
     updated_at: DateTime!
-    remember_token: String!
+    remember_token: String
+    api_token: String!
 }
 
 # type Mutation {

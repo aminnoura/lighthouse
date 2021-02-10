@@ -8,6 +8,7 @@ const LOGIN_MUTATION = gql`
 			id
 			email
 			remember_token
+			api_token
 		}
   	}
 `;
@@ -24,6 +25,7 @@ interface loginData {
     id: number;
     email: string;
     remember_token: string;
+    api_token: string;
 }
 
 interface logoutData {
@@ -53,12 +55,12 @@ const HomePage = () => {
 		.then( ({data}) =>{
 			console.log(data)
 			if (data) {
-			localStorage.setItem('token',data.login.remember_token)
+			localStorage.setItem('token',data.login.api_token)
 			}
 		}).catch(err=>{
 			console.log(err);
 		})
-  	},[]);
+  	},[loginMutation]);
 
     return (
       <div>
