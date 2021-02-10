@@ -20,13 +20,17 @@ class Login
             throw new Error('Invalid credentials.');
         }
 
+        if (! $token = auth()->attempt($args) ) {
+            return response()->json(['error' => 'Unauthorized'], 401);
+        }
+
         /**
          * Since we successfully logged in, this can no longer be `null`.
          *
          * @var \App\Models\User $user
          */
         $user = $guard->user();
-        $user->api_token = csrf_token();
+        $user->api_token = $token;
         $user->save();
 
         return $user;

@@ -10,14 +10,13 @@ class Logout
      * @param  null  $_
      * @param  array<string, mixed>  $args
      */
-    public function __invoke($_, array $args): ?User
+    public function __invoke($_, array $args)
     {
-        $guard = Auth::guard();
-
-        /** @var \App\Models\User|null $user */
-        $user = $guard->user();
-        $guard->logout();
-
+        if (!$user = auth()->user()) {
+            return;
+        }
+        
+        auth()->logout();
         return $user;
     }
 }

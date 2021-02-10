@@ -44,6 +44,7 @@ const HomePage = () => {
 		logoutMutation()
 		.then( ({data})=>{
 			console.log(data);
+			localStorage.removeItem('token');
 		})
 		.catch(err=> {
 			console.log(err);

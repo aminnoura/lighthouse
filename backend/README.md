@@ -56,3 +56,6 @@ This is how you generate a class for the field hello.
 Define your own scalar types by running `php artisan lighthouse:scalar <Scalar name>` and including it in your schema.
 
 [read more](https://github.com/user/repo/blob/branch/other_file.md)
+
+## A tutorial 
+[Link] (https://www.positronx.io/laravel-jwt-authentication-tutorial-user-login-signup-api/)
