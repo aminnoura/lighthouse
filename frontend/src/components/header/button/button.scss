@@ -1,6 +1,6 @@
 @import '../../../sass/variables';
 
-.languageBtn {
+.lightGreenBtn {
     margin-right: 20px;
     padding: 10px 20px;
     border-radius: 6px;
@@ -16,5 +16,14 @@
     &:active {
         background-color: $lightGreenActive;
         color: $white;
+    }
+
+    &:disabled {
+        opacity: .4;
+
+        &:hover {
+            background-color: $lightGreen;;
+            color: $white;
+        }
     }
 }

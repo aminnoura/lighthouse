@@ -6,7 +6,7 @@ const HeaderComponent = () => (
     <div className="generalContainer1 headerContainer1" >
         <div className="generalContainer2 headerContainer2">
             <h1>2025 CHEMNITZ</h1>
-            <Button className="languageBtn" onClick={()=>{console.log('clicked')}} text="Language Button" />
+            <Button disable={false} className="lightGreenBtn" onClick={()=>{console.log('clicked')}} text="Language Button" />
         </div>
     </div>
 );
