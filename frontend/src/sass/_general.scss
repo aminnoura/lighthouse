@@ -1,0 +1,53 @@
+html, body, #root {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/*  -----------------------------------------
+            SCROLL BAR GENERAL STYLE
+    -------------------------------------- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #8A8;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #696;
+}
+
+/*  -----------------------------------------
+            General Container Style
+    -------------------------------------- */
+
+.generalContainer1 {
+    display: flex;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generalContainer2 {
+    max-width: 1200px;
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+
+/*  -----------------------------------------
+        Remove outline focus style
+    -------------------------------------- */
+
+*:focus {
+    outline: none;
+}

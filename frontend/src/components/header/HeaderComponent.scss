@@ -1,22 +1,16 @@
-.headerContainer {
-    width: 100vw;
-    background-color: rgba(0,50,50,1);
+@import '../../sass/variables';
+
+.headerContainer1 {
+    background-color: $darkGreen;
     height: 80px;
-    color: rgba(250,250,250,1);
-    align-items: center;
-    display: flex;
+    color: $white;
 
-    h1 {
-        flex: 1;
-        margin-left: 20px;
-    }
+    .headerContainer2 {
+        align-items: center;
 
-    .languageBtn {
-        margin-right: 20px;
-        padding: 10px 20px;
-        border-radius: 6px;
-        border: none;
-        background-color: rgba(66,170,145,1);
-        color: rgba(254,254,254,1);
+        h1 {
+            flex: 1;
+            margin-left: 20px;
+        }
     }
 }
