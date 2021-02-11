@@ -1,14 +1,18 @@
 import React from "react";
-import Button from "./button/Button";
-import './HeaderComponent.scss';
+import Button from "../button/Button";
+import './Header.scss';
+import { useHistory } from "react-router-dom";
 
-const HeaderComponent = () => (
-    <div className="generalContainer1 headerContainer1" >
-        <div className="generalContainer2 headerContainer2">
-            <h1>2025 CHEMNITZ</h1>
-            <Button disable={false} className="lightGreenBtn" onClick={()=>{console.log('clicked')}} text="Language Button" />
+const Header = () => {
+    const history = useHistory();
+    return (
+        <div className="generalContainer1 headerContainer1" >
+            <div className="generalContainer2 headerContainer2">
+                <h1>2025 CHEMNITZ</h1>
+                <Button disable={false} className="lightGreenBtn" onClick={()=>{history.push('/login')}} text="Login" />
+            </div>
         </div>
-    </div>
-);
+    );
+}
 
-export default HeaderComponent;
+export default Header;

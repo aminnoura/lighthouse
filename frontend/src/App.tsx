@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import HeaderComponent from "./components/header/Header";
+import Header from "./components/header/Header";
 import Routes from "./utils/router";
 import './App.scss';
 
 const App = () => (
     <div className="main" >
-        <HeaderComponent />
         <BrowserRouter>
+            <Header />
             <div className="appContainer">
                 <Routes/>
             </div>

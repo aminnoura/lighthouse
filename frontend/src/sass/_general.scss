@@ -35,14 +35,22 @@ html, body, #root {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .generalContainer2 {
+        max-width: 1200px;
+        display: flex;
+        width: 100%;
+
+        .breadcrumb {
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
 }
 
-.generalContainer2 {
-    max-width: 1200px;
-    display: flex;
-    height: 100px;
-    width: 100%;
-}
+
 
 /*  -----------------------------------------
         Remove outline focus style
