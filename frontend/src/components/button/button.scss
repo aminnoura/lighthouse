@@ -27,3 +27,33 @@
         }
     }
 }
+
+.submitBtn {
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: $lightGreen;
+    color: $white;
+    align-self: flex-start;
+
+    &:hover {
+        background-color: $lightGreenHover;
+        color: $black;
+    }
+
+    &:active {
+        background-color: $lightGreenActive;
+        color: $white;
+    }
+
+    &:disabled {
+        opacity: .4;
+
+        &:hover {
+            background-color: $lightGreen;;
+            color: $white;
+        }
+    }
+}

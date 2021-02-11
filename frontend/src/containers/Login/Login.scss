@@ -1,0 +1,25 @@
+@import '../../sass/variables';
+
+.loginContainer2 {
+    flex-direction: column;
+
+    .formContainer {
+        margin-left: 20px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .labelAndInputContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            .inputLabel {
+                min-width: 80px;
+            }
+        }
+    }
+}

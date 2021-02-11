@@ -47,6 +47,12 @@ html, body, #root {
             margin-top: 20px;
             margin-left: 20px;
         }
+
+        .errorSpan {
+            color: $red;
+            font-style: oblique;
+            margin-top: 8px;
+        }
     }
 }
 
