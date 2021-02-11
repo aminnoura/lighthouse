@@ -1,0 +1,20 @@
+@import '../../../sass/variables';
+
+.languageBtn {
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: $lightGreen;
+    color: $white;
+
+    &:hover {
+        background-color: $lightGreenHover;
+        color: $black;
+    }
+
+    &:active {
+        background-color: $lightGreenActive;
+        color: $white;
+    }
+}
