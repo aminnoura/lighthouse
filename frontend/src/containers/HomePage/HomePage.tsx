@@ -1,10 +1,14 @@
-import React from "react";
+import React, { FC, ReactElement } from "react";
 
-const HomePage = () => {
+type IProps = {
+
+}
+
+const HomePage: FC<IProps> = ({}): ReactElement => {
     return (
-      <div>
-          <h1>Home Page</h1>           
-        </div>
+      	<div>
+          	<h1>Home Page</h1>           
+      	</div>
     );
 }
 
