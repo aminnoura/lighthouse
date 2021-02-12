@@ -18,3 +18,12 @@ export const LOGOUT_MUTATION = gql`
 		}
 	}
 `;
+
+export const PROFILE_MUTATION = gql`
+	mutation profile {
+		profile {
+			id
+			email
+		}
+	}
+`;
