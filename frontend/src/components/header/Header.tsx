@@ -19,7 +19,7 @@ const Header = () => {
 
         localStorage.removeItem('token');
         alert('logged out successfully.')
-        history.push('/home');
+        history.push('/');
     }
 
     useEffect(() => {
