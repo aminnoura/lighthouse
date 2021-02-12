@@ -29,7 +29,6 @@ interface PrivateRouteProps {
 
 function PrivateRoute({ children , ...rest }: PrivateRouteProps) {
   const token = localStorage.getItem('token');
-  console.log(token)
   return (
     <Route
       {...rest}

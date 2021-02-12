@@ -1,15 +1,41 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../button/Button";
 import './Header.scss';
 import { useHistory } from "react-router-dom";
+import { isAuth } from "../../utils/helper";
+import { LOGOUT_MUTATION } from "../../graphql/types";
+import { useMutation } from "@apollo/client";
 
 const Header = () => {
+    const [authenticated,setAuthenticated] = useState<boolean>(false);
     const history = useHistory();
+    const [logoutMutation] = useMutation(LOGOUT_MUTATION);
+    const handleLogout = (): void => {
+        
+        logoutMutation()
+        .catch(err=>{
+            console.log(err);
+        });
+
+        localStorage.removeItem('token');
+        alert('logged out successfully.')
+        history.push('/home');
+    }
+
+    useEffect(() => {
+        let auth = isAuth();
+        setAuthenticated(auth);
+        return history.listen(() => { 
+            let auth = isAuth();
+            setAuthenticated(auth);
+        })
+    },[history])
     return (
         <div className="generalContainer1 headerContainer1" >
             <div className="generalContainer2 headerContainer2">
                 <h1>2025 CHEMNITZ</h1>
-                <Button disable={false} className="lightGreenBtn" onClick={()=>{history.push('/login')}} text="Login" />
+                {authenticated && <Button disable={false} className="lightGreenBtn" onClick={handleLogout} text="Logout" />}
+                {!authenticated && <Button disable={false} className="lightGreenBtn" onClick={()=>{history.push('/login')}} text="Login" />}
             </div>
         </div>
     );
