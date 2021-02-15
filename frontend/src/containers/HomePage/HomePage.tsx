@@ -8,7 +8,6 @@ type IProps = {
 }
 
 const HomePage: FC<IProps> = (): ReactElement => {
-	let erfan = 'nora';
     return (
       	<div className="generalContainer1 homeContainer1">
 			<div className="generalContainer2 homeContainer2">
