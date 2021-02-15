@@ -17,7 +17,7 @@ const Profile = () => {
         .catch(err=>{
             console.log(err);
         })
-    },[])
+    },[profileMutation])
     return (
         <div>
             <h1>Profile</h1>
