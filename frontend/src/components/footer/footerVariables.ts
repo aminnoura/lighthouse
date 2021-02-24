@@ -1,16 +1,10 @@
-import { dublinLinkType, FOOTER_ENUM } from "../../types/FooterTypes";
+import { dublinLinkType, FOOTER_ENUM , generalLinksType } from "../../types/FooterTypes";
 
 let dublinLinks: dublinLinkType [] = [
-    {
-        className:"url",
-        name: "About Us",
-        url: "/about-us",
-        type: FOOTER_ENUM.FOOTER_URL,
-    },
-
+    
     {
         className:"phone",
-        phone: "009891245754",
+        phone: "+989129990000",
         type: FOOTER_ENUM.FOOTER_PHONE,
     },
 
@@ -21,7 +15,7 @@ let dublinLinks: dublinLinkType [] = [
     },
 ]
 
-let popularLinks: dublinLinkType [] = [
+let popularLinks: generalLinksType [] = [
     {
         className:"url",
         name: "About Us",
@@ -31,31 +25,123 @@ let popularLinks: dublinLinkType [] = [
 
     {
         className:"url",
-        name: "About Us",
-        url: "/about-us",
+        name: "Contact",
+        url: "/Contact",
         type: FOOTER_ENUM.FOOTER_URL,
     },
     
     {
         className:"url",
-        name: "About Us",
-        url: "/about-us",
+        name: "Exapmle",
+        url: "/notfound",
         type: FOOTER_ENUM.FOOTER_URL,
     },
     
     {
         className:"url",
-        name: "About Us",
-        url: "/about-us",
+        name: "Example",
+        url: "/notfound",
         type: FOOTER_ENUM.FOOTER_URL,
     },
 
     {
         className:"url",
-        name: "About Us",
-        url: "/about-us",
+        name: "Example",
+        url: "/notfound",
+        type: FOOTER_ENUM.FOOTER_URL,
+    },
+    
+    {
+        className:"url",
+        name: "Example",
+        url: "/notfound",
+        type: FOOTER_ENUM.FOOTER_URL,
+    },
+
+    {
+        className:"url",
+        name: "Example",
+        url: "/notfound",
+        type: FOOTER_ENUM.FOOTER_URL,
+    },
+
+    {
+        className:"url",
+        name: "For Exapmle And Test",
+        url: "/notfound",
+        type: FOOTER_ENUM.FOOTER_URL,
+    },
+
+]
+let quickLinks: generalLinksType [] = [
+    {
+        className:"url",
+        name: "Example",
+        url: "/notfound",
+        type: FOOTER_ENUM.FOOTER_URL,
+    },
+
+    {
+        className:"url",
+        name: "Example",
+        url: "/notfound",
+        type: FOOTER_ENUM.FOOTER_URL,
+    },
+
+    {
+        className:"url",
+        name: "Example",
+        url: "/notfound",
+        type: FOOTER_ENUM.FOOTER_URL,
+    },
+
+    {
+        className:"url",
+        name: "Example",
+        url: "/notfound",
+        type: FOOTER_ENUM.FOOTER_URL,
+    },
+
+    {
+        className:"url",
+        name: "Example",
+        url: "/notfound",
+        type: FOOTER_ENUM.FOOTER_URL,
+    },
+
+    {
+        className:"url",
+        name: "Example",
+        url: "/notfound",
+        type: FOOTER_ENUM.FOOTER_URL,
+    },
+
+    {
+        className:"url",
+        name: "Example",
+        url: "/notfound",
+        type: FOOTER_ENUM.FOOTER_URL,
+    },
+
+    {
+        className:"url",
+        name: "Example",
+        url: "/notfound",
+        type: FOOTER_ENUM.FOOTER_URL,
+    },
+
+    {
+        className:"url",
+        name: "Example",
+        url: "/notfound",
+        type: FOOTER_ENUM.FOOTER_URL,
+    },
+
+    {
+        className:"url",
+        name: "For Exapmle And Test",
+        url: "/notfound",
         type: FOOTER_ENUM.FOOTER_URL,
     },
 ]
-
-export {dublinLinks , popularLinks}
+export {dublinLinks , popularLinks , quickLinks}

@@ -9,13 +9,23 @@ export type dublinLinkType = {
     name : string;
     url: string;
     type: FOOTER_ENUM.FOOTER_URL;
-}| {
+} | 
+
+{
     className: string;
     phone:string;
     type:FOOTER_ENUM.FOOTER_PHONE;
-}|{
+} | 
+
+{
     className:string;
     email: string;
     type: FOOTER_ENUM.FOOTER_EMAIL;
 }
 
+export type generalLinksType = {
+    className : string;
+    name : string;
+    url: string;
+    type: FOOTER_ENUM.FOOTER_URL;
+}

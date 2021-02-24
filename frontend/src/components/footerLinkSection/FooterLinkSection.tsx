@@ -1,10 +1,10 @@
 import React, { FC, ReactElement, ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { dublinLinkType, FOOTER_ENUM} from '../../types/FooterTypes';
+import { dublinLinkType, FOOTER_ENUM, generalLinksType} from '../../types/FooterTypes';
 import './FooterLinkSection.scss';
 
 type Props = {
-    links: dublinLinkType[],
+    links: dublinLinkType[] | generalLinksType [],
     title: string,
     className?: string,
 };
@@ -15,7 +15,7 @@ const FooterLinkSection: FC<Props> = ( { links , title , className } ) : ReactEl
             <h3> {title} </h3>
             <ul>
             {
-                links?.map((link , index )=>{
+                (links as any[]).map((link , index )=>{
                     if(link.type === FOOTER_ENUM.FOOTER_URL){
                         return <li key={index} className= {link.className}><Link to={link.url}> {link.name} </Link></li>
                     }
