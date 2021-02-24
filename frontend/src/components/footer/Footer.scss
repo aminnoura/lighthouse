@@ -1,5 +1,89 @@
 @import '../../sass/variables';
 
-.footerContainer {
-    display: flex;
+.footerContainer1 {
+    background-color: $darkGreen2;
+
+    .footerContainer2 {
+        display: flex;
+        flex-direction: column;
+        
+        .mainFooterSectionContainer {
+            display: flex;
+            flex-direction: row;
+    
+            .footerNewsletter {
+                flex:2;
+                background-color: $lightBlue;
+            }
+
+            .footerSocial {
+                flex:1;
+                background-color: $lightBlue;
+            }
+            &:last-of-type {
+                flex-direction: column;
+                background-color: $black;
+            }
+            &:nth-last-of-type(2) {
+                display: flex;
+                background-color: $darkGrey;
+                
+                @media screen and (max-width:"500px") {
+                    display:block;
+                }
+
+                .mainFooterUrl {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 4px;
+                    margin: 8px;
+                    flex:1;
+
+                    @media screen and (max-width:"768px") {
+                        flex-direction: column;
+                    }
+
+                    .mainFooterUrlInternal {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 4px;
+                        padding: 4px;
+                        flex:1;
+
+                    }
+    
+                    .footerImageContainer {
+                        align-items: center;
+    
+                        .footerImage {
+                            margin: 8px;
+                            width: 60%;
+    
+                            &:last-child {
+                                width: 50%;
+                                
+                                @media screen and (max-width:"768px") {
+                                    width: 30%;
+                                }
+                            }
+
+                            @media screen and (max-width:"768px") {
+                                width: 40%;
+                            }
+                        }
+
+                        @media screen and (max-width:"768px") {
+                            border-right: 1px solid $black;
+                        }
+                    }
+    
+                    .footerUrlLeftRightContainer {
+                        border-right: 1px solid $black;
+                    }
+                }
+            }
+        } 
+    }
 }
+
+

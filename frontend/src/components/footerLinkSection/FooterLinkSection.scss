@@ -1,2 +1,22 @@
 @import '../../sass/variables';
 
+.footerLinkSection {
+    font-family: arial;
+    font-size: 17px;
+    color: $lightBlue2;
+    margin-bottom: 16px;
+    ul {
+        list-style-type: none;
+        margin: 4px 0 0 8px;
+        li {
+            a {
+                text-decoration: none;
+                color: $grey;
+
+                &:hover {
+                    color: $greyHover;
+                }
+            }
+        }
+    }
+}
