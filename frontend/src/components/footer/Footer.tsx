@@ -3,8 +3,14 @@ import './Footer.scss';
 import { useHistory } from "react-router-dom";
 import FooterLinkSection from "../footerLinkSection/FooterLinkSection";
 import { dublinLinks, popularLinks, quickLinks } from "./footerVariables";
-import chemnitzUni from "../../images/logo/chemnitzUni.png";
-import chemnitz2025 from "../../images/logo/2025chemnitz.png";
+
+import chemnitzUni from "../../images/footerLogos/chemnitzUni.png";
+import chemnitz2025 from "../../images/footerLogos/2025chemnitz.png";
+import facebookLogo from "../../images/footerLogos/social/facebook.png";
+import twitterLogo from "../../images/footerLogos/social/twitter.png";
+import instagramLogo from "../../images/footerLogos/social/instagram.png";
+import youtubeLogo from "../../images/footerLogos/social/youtube.png";
+import linkedinLogo from "../../images/footerLogos/social/linkedin.png";
 
 const Footer = () => {
     const history = useHistory();
@@ -22,16 +28,20 @@ const Footer = () => {
             <div className="generalContainer2 footerContainer2">
                 {isHome && <div className="mainFooterSectionContainer">
                     <div className="footerNewsletter"> 
-                        <h4>Newsletter From</h4>
                         <form className="footerNewsletterForm">
-                        <input className="footerNewsletterInput" type="text" />
-                        <input className="footerNewsletterInput" type="email"/>
-                        <input className="footerNewsletterSubmit" type="submit"/>
+                            <h4>Newsletter Form</h4>
+                            <input className="footerNewsletterInput" type="text" placeholder="Name*"/>
+                            <input className="footerNewsletterInput" type="email" placeholder="Email*"/>
+                            <input className="footerNewsletterSubmit" type="submit"/>
                         
                         </form>
                     </div>
                     <div className="footerSocial">
-                        Social
+                        <a className="footerSocialLogo" href="#"> <img className="fbLogo" src={facebookLogo} alt="FaceBook"/> </a>
+                        <a className="footerSocialLogo" href="#"> <img src={twitterLogo} alt="FaceBook"/> </a>
+                        <a className="footerSocialLogo" href="#"> <img src={instagramLogo} alt="FaceBook"/> </a>
+                        <a className="footerSocialLogo" href="#"> <img src={youtubeLogo} alt="FaceBook"/> </a>
+                        <a className="footerSocialLogo" href="#"> <img src={linkedinLogo} alt="FaceBook"/> </a>
                     </div>
                 </div>}
                 <div className="mainFooterSectionContainer">
