@@ -122,10 +122,6 @@
                 }
             }
 
-            &:last-of-type {
-                flex-direction: column;
-                background-color: $black;
-            }
             &:nth-last-of-type(2) {
                 display: flex;
                 background-color: $darkGrey;
@@ -174,6 +170,21 @@
                 }
             }
         } 
+
+        .copyrightSection {
+            flex-direction: column;
+            background-color: $black;
+            padding: 8px 0;
+            text-align: center;
+            
+            .copyrightText {
+                font-family: arial;
+                font-size: 12px;
+                color: $grey;
+                margin: 0 0 0 12px;
+                
+            }
+        }
     }
 }
 

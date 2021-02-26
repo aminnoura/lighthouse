@@ -20,8 +20,7 @@ $bigTablet: 900px;
 $desktop: 1024px;
 $superBig: 1200px;
 
-//
-
+//functions
 @function colorOpacity ( $color, $opacity) {
     @return (rgba($color , $opacity))
     

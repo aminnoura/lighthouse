@@ -20,3 +20,38 @@
         }
     }
 }
+
+.footerBottomSectionUrls {
+    font-family: arial;
+    font-size: 12px;
+
+    ul {
+        list-style-type: none;
+        margin: 0 0 0 4px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-items: center;
+
+        li {
+            border-right: 1px solid $white;
+            padding: 0 8px;
+            
+            &:nth-last-of-type(2) {
+                border: none;
+            }
+            &:last-of-type {
+                border-right: none;
+                border-left: 1px solid $white;
+            }
+            a {
+                text-decoration: none;
+                color: $grey;
+
+                &:hover {
+                    color: $greyHover;
+                }
+            }
+        }
+    }
+}

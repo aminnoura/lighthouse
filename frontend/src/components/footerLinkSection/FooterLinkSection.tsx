@@ -5,7 +5,7 @@ import './FooterLinkSection.scss';
 
 type Props = {
     links: dublinLinkType[] | generalLinksType [],
-    title: string,
+    title?: string,
     className?: string,
 };
 

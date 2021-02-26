@@ -144,4 +144,34 @@ let quickLinks: generalLinksType [] = [
         type: FOOTER_ENUM.FOOTER_URL,
     },
 ]
-export {dublinLinks , popularLinks , quickLinks}
+
+let copyrightLinks: generalLinksType [] = [
+    {
+        className:"url",
+        name: "Privacy & Legal",
+        url: "/notfound",
+        type: FOOTER_ENUM.FOOTER_URL,
+    },
+
+    {
+        className:"url",
+        name: "Cookie Policy",
+        url: "/notfound",
+        type: FOOTER_ENUM.FOOTER_URL,
+    },
+
+    {
+        className:"url",
+        name: "Sitemap",
+        url: "/notfound",
+        type: FOOTER_ENUM.FOOTER_URL,
+    },
+
+    {
+        className:"url",
+        name: "Campus Options",
+        url: "/notfound",
+        type: FOOTER_ENUM.FOOTER_URL,
+    },
+]
+export {dublinLinks , popularLinks , quickLinks, copyrightLinks}
