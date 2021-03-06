@@ -10,15 +10,9 @@ import marx from "../../images/chemnitz/marx.jpg";
 import theater from "../../images/chemnitz/theater.jpg";
 import TeamMembers from "../../components/TeamMembers/TeamMembers";
 
+const images=[schlossteich,bahnhof,center1,Johannisplatz,marx,theater ]; 
 
-const images=[schlossteich,bahnhof,center1,Johannisplatz,marx,theater ];
- 
-// const teamMembersImages=[teamMember1,teamMember2,teamMember3]
-type IProps = {
-
-}
-
-const HomePage: FC<IProps> = (): ReactElement => {
+const HomePage: FC = (): ReactElement => {
     return (
       	<div className="generalContainer1 homeContainer1">
 			<div className="generalContainer2 homeContainer2">

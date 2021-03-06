@@ -1,15 +1,14 @@
 import React, { FC, ReactElement, useEffect, useState } from 'react';
 import './slideShow.scss';
 
-
 type propsType = {
     imageList:string[]
-
 };
 
 const SlideShow: FC<propsType> = ({imageList}) : ReactElement  => {
     const [display, setDisplay] = useState<number>(0);
 
+    // This block of code controls the automatic image change(Slide show).
     useEffect(() => {
         const interval = setInterval(() => {
             setDisplay( prev => {
