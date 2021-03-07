@@ -9,8 +9,10 @@ type Props = {
     children?: ReactNode
 };
 
-const Button: FC<Props> = ( { text, disable, className, onClick, children = 'Click' } ) : ReactElement  => {
-    const value = text || children;
+const Button: FC<Props> = ( props ) : ReactElement  => {
+
+    const { text, disable, className, onClick, children = 'Click' }=props;
+    const value =text || children   ;
     return (
         <button disabled={disable?true:false} className={disable ? `disable ${className}` : className} onClick={(e) => onClick(e)}>{value}</button>
     )

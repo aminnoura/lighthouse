@@ -33,7 +33,7 @@ const Header = () => {
     return (
         <div className="generalContainer1 headerContainer1" >
             <div className="generalContainer2 headerContainer2">
-                <h1>2025 CHEMNITZ</h1>
+                <h1><a href="/">2025 CHEMNITZ</a></h1>
                 {authenticated && <Button disable={false} className="lightGreenBtn" onClick={handleLogout} text="Logout" />}
                 {!authenticated && <Button disable={false} className="lightGreenBtn" onClick={()=>{history.push('/login')}} text="Login" />}
             </div>

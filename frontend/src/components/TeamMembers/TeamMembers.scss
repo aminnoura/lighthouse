@@ -1,0 +1,76 @@
+@import '../../sass/variables';
+
+.teamMembersContainer {
+    width: 96%;
+    height : auto;
+    background: linear-gradient(to bottom, #003232 0%, #003232 40%);
+    border-radius: 6px;
+    flex-direction: column;
+    padding: 30px 2%;
+    text-align: center;
+
+    .teamMembers {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 50px auto;
+
+
+        .eachTeamMember {
+            background-image: linear-gradient( to top, #003232 8%, #42aa91 8%, #42aa91 74%, #003232 30%);
+            width: 200px;
+            height: 200px;
+            margin-bottom: 120px;
+            padding: 0 50px;
+            text-align: center;
+            align-content:center ;
+
+            .teamMemberName {
+                margin: 20px 0;
+            }
+        
+        
+            .userImage {
+                height: 170px;
+                width:auto;
+                margin: 15px 0;
+                object-fit: contain;
+            }
+        
+        
+            .shortLine {
+                border-bottom: 3px solid rgb(207, 49, 49);
+                width: 50px;
+                border-radius: 5px;
+                margin: 10px auto;
+            }
+                
+            .icons {
+                margin: 20px 0;
+        
+                i{ 
+                    margin: 30px 20px;
+                    cursor: pointer;
+                }
+
+                .socialLogo {
+                    width: 20px;
+                    height: 20px;
+                    margin: 4px;
+                    border-radius: 8px;
+                }
+            }
+                       
+            a {
+                text-decoration: none;
+                font-size: x-large;
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+
+
