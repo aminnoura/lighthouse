@@ -6,7 +6,7 @@ import {
 } from "@apollo/client";
 
 const link = createHttpLink({
-    uri: "http://localhost:8000/graphql",
+    uri: "http://2025chemnitz.com/laravel/graphql",
     credentials: 'same-origin'
 });
 
