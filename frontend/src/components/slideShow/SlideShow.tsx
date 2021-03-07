@@ -10,7 +10,7 @@ const SlideShow: FC<propsType> = ({imageList}) : ReactElement  => {
 
     // This block of code controls the automatic image change(Slide show).
     useEffect(() => {
-        const interval = setInterval(() => {
+        const interval:NodeJS.Timeout = setInterval(() => {
             setDisplay( prev => {
                 return prev>=5?0:prev+1;
             });

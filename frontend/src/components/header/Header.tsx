@@ -23,7 +23,7 @@ const Header = () => {
     }
 
     useEffect(() => {
-        let auth = isAuth();
+        let auth:boolean = isAuth();
         setAuthenticated(auth);
         return history.listen(() => { 
             let auth = isAuth();

@@ -10,7 +10,7 @@ import marx from "../../images/chemnitz/marx.jpg";
 import theater from "../../images/chemnitz/theater.jpg";
 import TeamMembers from "../../components/TeamMembers/TeamMembers";
 
-const images=[schlossteich,bahnhof,center1,Johannisplatz,marx,theater ]; 
+const images:string[]=[schlossteich,bahnhof,center1,Johannisplatz,marx,theater ]; 
 
 const HomePage: FC = (): ReactElement => {
     return (

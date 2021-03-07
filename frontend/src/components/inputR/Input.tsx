@@ -40,14 +40,10 @@ const Input: FC<PropsType> = ( props ) : ReactElement  => {
 
             }
         </div>
-
-                
-    )
+   )
    }
-
     return (
-        <input placeholder={placeholder} onChange={onChange} value={value} />
-                 
+        <input placeholder={placeholder} onChange={onChange} value={value} />                
         )
 }
 

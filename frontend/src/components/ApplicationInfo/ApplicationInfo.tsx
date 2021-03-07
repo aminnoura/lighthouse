@@ -6,10 +6,7 @@ import mobile3 from "../../images/applicationInfo/img03.png";
 import gPlay from "../../images/applicationInfo/google-play-badge.png";
 import aStore from "../../images/applicationInfo/apple-store-badge.svg";
 
-type Props = {
-};
-
-const ApplicationInfo: FC<Props> = () : ReactElement  => {
+const ApplicationInfo: FC = () : ReactElement  => {
     return (
         <div className="applicationInfoContainer">
             <h2 className="h2"> 2025 CHEMNITZ Mobile App</h2>
