@@ -66,3 +66,12 @@ html, body, #root {
 *:focus {
     outline: none;
 }
+
+
+/*  -----------------------------------------
+        Button pointer change
+    -------------------------------------- */
+
+button, input {
+    cursor: pointer;
+}

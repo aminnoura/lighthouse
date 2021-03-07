@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import './Footer.scss';
 import { useHistory } from "react-router-dom";
 import FooterLinkSection from "../footerLinkSection/FooterLinkSection";
-import { dublinLinks, popularLinks, quickLinks, copyrightLinks} from "./footerVariables";
+import { dublinLinks, popularLinks, quickLinks, copyrightLinks} from "./footerVariables"; 
 
 import chemnitzUni from "../../images/footerLogos/chemnitzUni.png";
 import chemnitz2025 from "../../images/footerLogos/2025chemnitz.png";
@@ -26,7 +26,7 @@ const Footer = () => {
     return (
         <div className="generalContainer1 footerContainer1" >
             <div className="generalContainer2 footerContainer2">
-                {isHome && <div className="mainFooterSectionContainer">
+                {isHome && <div className="mainFooterSectionContainer mainFooterNewsletterTop">
                     <div className="footerNewsletter"> 
                         <form className="footerNewsletterForm">
                             <h4>Newsletter Form</h4>
@@ -44,7 +44,7 @@ const Footer = () => {
                         <a className="footerSocialLogo" href="#"> <img src={linkedinLogo} alt="FaceBook"/> </a>
                     </div>
                 </div>}
-                <div className="mainFooterSectionContainer Section">
+                {/* <div className="mainFooterSectionContainer Section">
                     <div className="mainFooterUrl">
                         <div className="footerImageContainer mainFooterUrlInternal"> 
                             <img className="footerImage" src={chemnitzUni} alt="Chemnitz University"/>
@@ -65,7 +65,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                </div>
+                </div> */}
                 <div className="mainFooterSectionContainer copyrightSection">
                     <div className="footerBottomSection"> 
                         <FooterLinkSection className={'footerBottomSectionUrls'} links = {copyrightLinks}/>

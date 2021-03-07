@@ -2,9 +2,11 @@
 
 .loginContainer2 {
     flex-direction: column;
+    background-color: $lightGreen;
+    padding-bottom: 20px;
 
     .formContainer {
-        margin-left: 20px;
+        padding-left: 40px;
         margin-top: 20px;
         display: flex;
         flex-direction: column;

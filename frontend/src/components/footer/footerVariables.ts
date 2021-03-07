@@ -1,5 +1,5 @@
 import { dublinLinkType, FOOTER_ENUM , generalLinksType } from "../../types/FooterTypes";
-
+ 
 let dublinLinks: dublinLinkType [] = [
     
     {
