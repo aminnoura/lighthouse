@@ -39,16 +39,12 @@ const Input: FC<PropsType> = ( props ) : ReactElement  => {
                 )
 
             }
-        </div>
-
-                
+        </div>            
     )
    }
-
     return (
         <input placeholder={placeholder} onChange={onChange} value={value} />
-                 
-        )
+      )
 }
 
 export default Input;

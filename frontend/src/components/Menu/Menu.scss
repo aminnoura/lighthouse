@@ -1,0 +1,87 @@
+@import '../../sass/variables';
+// %showMe{
+    
+//     display: block;
+// }
+%flexRow{
+    display: flex;
+    flex-direction: row;
+}
+%color-bg-dark{
+    background-color: $lightGreen ;
+    color: white; 
+}
+%color-bg-light{
+    background-color: $lightGreenHover;
+            color: black;
+}
+
+%radiusPadding{
+    padding: 8px 10px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+
+
+
+.allMenu {
+    @extend %flexRow;
+    .eachMenu {
+        list-style-type:none;
+    } 
+    .eachMenulink {
+        @extend %flexRow;
+        @extend   %color-bg-dark;
+        display: block;
+        @extend %radiusPadding;
+        margin-right: 5px;
+        width: 70px;       
+         &:hover {
+            @extend   %color-bg-light;
+            list-style-type:none;
+            +.subMenu {
+                display: block;
+                position: absolute;   
+                z-index: 1;
+                @extend %flexRow;                                
+            }        
+        }
+    }
+    .subMenu{
+        display: none;
+        &:hover {
+            display: block;
+            flex-direction: row;
+            display: flex;
+            z-index: 1;
+            position: absolute;   
+         }
+        .linkLevel-1-0,.linkLevel-1-1,.linkLevel-2-0, .linkLevel-3-0{
+            display: block;
+            @extend   %color-bg-dark;
+            @extend %radiusPadding;
+            &:hover{
+                @extend   %color-bg-light;
+            }
+        }
+        .linkLevel-1-0:hover{     
+            +.subLevel2{
+                display: block;
+             }
+        }
+        .linkLevel-2-0{
+            &:hover{
+                +.subLevel3{
+                    display: block;
+                }
+            }
+        }       
+        .linkLevel-3-0:hover{
+            display: block;
+        }
+    }
+}
+
+
+
