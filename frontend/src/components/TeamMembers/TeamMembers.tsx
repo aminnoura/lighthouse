@@ -1,8 +1,7 @@
 import React, { FC, ReactElement } from 'react';
 import './TeamMembers.scss';
+import amninnoura from "../../images/teamMembers/aminnoura3.png";
 import teamMember1 from "../../images/teamMembers/teamMember1.png";
-import teamMember2 from "../../images/teamMembers/teamMember2.png";
-import teamMember3 from "../../images/teamMembers/teamMember3.png";
 import SingleMember from './SingleMember';
 type teamMemberListType={
 	name:string,
@@ -10,38 +9,42 @@ type teamMemberListType={
 	position:string,
 	fbUrl:string,
 	twUrl:string,
-	piUrl:string
+	liUrl:string,
+	inUrl:string
 }
 const teamMemberList:teamMemberListType[]=[
 	{
-		name:"member1",
+		name:"Amin Noura",
+		image:amninnoura,
+		position:"Head of the team",
+		fbUrl:"https://www.facebook.com/aminnoura",
+		twUrl:"https://twitter.com/AminNoura_en",
+		inUrl:"https://www.instagram.com/aminnoura/",
+		liUrl:"https://www.linkedin.com/in/aminnoura/"
+	},
+	{
+		name:"Erfan Safaei",
 		image:teamMember1,
-		position:"manager",
+		position:"intern",
 		fbUrl:"#",
 		twUrl:"#",
-		piUrl:"#"
+		inUrl:"#",
+		liUrl:"#"
 	},
 	{
-		name:"member2",
-		image:teamMember2,
-		position:"manager",
+		name:"Maziar Rumiani",
+		image:teamMember1,
+		position:"intern",
 		fbUrl:"#",
 		twUrl:"#",
-		piUrl:"#"
-	},
-	{
-		name:"member3",
-		image:teamMember3,
-		position:"manager",
-		fbUrl:"#",
-		twUrl:"#",
-		piUrl:"#"
+		inUrl:"#",
+		liUrl:"#"
 	}
 ]
 const TeamMembers: FC = () : ReactElement  => {
 	return (      
     <div className="teamMembersContainer">
-        <h2>Team Awesome</h2> 
+        <h2>Our Team</h2> 
 		<div className="teamMembers"> 
 			{ 
 				teamMemberList.map( (teamMember,index) => 
