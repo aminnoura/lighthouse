@@ -9,6 +9,7 @@ type teamMemberListType={
 }
 const SingleMember: FC<teamMemberListType>  = ( { name, image, position, fbUrl, twUrl, piUrl } )  => {  
     return (
+        
         <div className="eachTeamMember"> <img src={image} alt="teamMember1"/>
             <h3 className="teamMemberName">{name}</h3>
             <p className="teamMemberPosition">{position}</p>
